@@ -50,7 +50,7 @@ body{
 }
 html{
 	height: auto!important;
-	// overflow-x:hidden;
+	overflow-x:hidden;
 	@media screen and (max-width: 806px){
 		width: 130%;
 	}
@@ -169,7 +169,7 @@ a{
 }
 .fixMenu{
 	width: 74px;
-	height: 980px;
+	height: 2000px;
 	position: fixed;
 	display: none;
 	border-right: 1px solid #b6b6b6;

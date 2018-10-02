@@ -11,7 +11,8 @@
   margin: 0; }
 
 html {
-  height: auto !important; }
+  height: auto !important;
+  overflow-x: hidden; }
   @media screen and (max-width: 806px) {
     html {
       width: 130%; } }
@@ -116,7 +117,7 @@ a {
 
 .fixMenu {
   width: 74px;
-  height: 980px;
+  height: 2000px;
   position: fixed;
   display: none;
   border-right: 1px solid #b6b6b6;
