@@ -11,8 +11,7 @@
   margin: 0; }
 
 html {
-  height: auto !important;
-  overflow-x: hidden; }
+  height: auto !important; }
   @media screen and (max-width: 806px) {
     html {
       width: 130%; } }
