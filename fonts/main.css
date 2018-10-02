@@ -1,0 +1,175 @@
+@font-face {
+	font-family: "Roboto-Black";
+	src: url("./Roboto-2014/Roboto-Black.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-BlackItalic";
+	src: url("./Roboto-2014/Roboto-BlackItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-Bold";
+	src: url("./Roboto-2014/Roboto-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-BoldItalic";
+	src: url("./Roboto-2014/Roboto-BoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoCondensed-Bold";
+	src: url("./Roboto-2014/RobotoCondensed-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoCondensed-BoldItalic";
+	src: url("./Roboto-2014/RobotoCondensed-BoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoCondensed-Italic";
+	src: url("./Roboto-2014/RobotoCondensed-Italic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoCondensed-Light";
+	src: url("./Roboto-2014/RobotoCondensed-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoCondensed-LightItalic";
+	src: url("./Roboto-2014/RobotoCondensed-LightItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoCondensed-Regular";
+	src: url("./Roboto-2014/RobotoCondensed-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-Italic";
+	src: url("./Roboto-2014/Roboto-Italic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-Light";
+	src: url("./Roboto-2014/Roboto-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-LightItalic";
+	src: url("./Roboto-2014/Roboto-LightItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-Medium";
+	src: url("./Roboto-2014/Roboto-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-MediumItalic";
+	src: url("./Roboto-2014/Roboto-MediumItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-Bold";
+	src: url("./Roboto-2014/Roboto-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-Regular";
+	src: url("./Roboto-2014/Roboto-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-Thin";
+	src: url("./Roboto-2014/Roboto-Thin.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Roboto-ThinItalic";
+	src: url("./Roboto-2014/Roboto-ThinItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothamProBlack";
+	src: url("./GothamPro/GothamProBlack/GothamProBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamProBlackItalic";
+	src: url("./GothamPro/GothamProBlackItalic/GothamProBlackItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamProBold";
+	src: url("./GothamPro/GothamProBold/GothamProBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamProBoldItalic";
+	src: url("./GothamPro/GothamProBoldItalic/GothamProBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamProItalic";
+	src: url("./GothamPro/GothamProItalic/GothamProItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamProLight";
+	src: url("./GothamPro/GothamProLight/GothamProLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamProLightItalic";
+	src: url("./GothamPro/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamProMedium";
+	src: url("./GothamPro/GothamProMedium/GothamProMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamProMediumItalic";
+	src: url("./GothamPro/GothamProMediumItalic/GothamProMediumItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamProRegular";
+	src: url("./GothamPro/GothamProRegular/GothamProRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
