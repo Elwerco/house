@@ -13,42 +13,6 @@
 html {
   height: auto !important;
   overflow-x: hidden; }
-  @media screen and (max-width: 806px) {
-    html {
-      width: 130%; } }
-  @media screen and (max-width: 631px) {
-    html {
-      width: 140%; } }
-  @media screen and (max-width: 562px) {
-    html {
-      width: 160%; } }
-  @media screen and (max-width: 492px) {
-    html {
-      width: 170%; } }
-  @media screen and (max-width: 492px) {
-    html {
-      width: 180%; } }
-  @media screen and (max-width: 426px) {
-    html {
-      width: 190%; } }
-  @media screen and (max-width: 404px) {
-    html {
-      width: 200%; } }
-  @media screen and (max-width: 382px) {
-    html {
-      width: 215%; } }
-  @media screen and (max-width: 351px) {
-    html {
-      width: 225%; } }
-  @media screen and (max-width: 325px) {
-    html {
-      width: 245%; } }
-  @media screen and (max-width: 307px) {
-    html {
-      width: 255%; } }
-  @media screen and (max-width: 285px) {
-    html {
-      width: 275%; } }
 
 li {
   list-style-type: none; }
@@ -262,12 +226,15 @@ header.mainHeader {
     width: 100%;
     height: 938px;
     overflow: hidden; }
+    @media screen and (max-width: 372px) {
+      header.mainHeader .headerWrapper {
+        height: 640px; } }
     header.mainHeader .headerWrapper .entryHeader {
       background: #fff;
       position: fixed;
       margin-bottom: 55%;
       z-index: 3;
-      height: 938px;
+      height: 2000px;
       border-right: 1px solid #333; }
       @media screen and (max-width: 640px) {
         header.mainHeader .headerWrapper .entryHeader {
@@ -342,18 +309,22 @@ header.mainHeader {
         height: auto !important; }
     header.mainHeader .headerWrapper .noSlideWrapper {
       width: 100%;
-      height: auto;
+      height: 100%;
+      max-height: 1000px;
       overflow: hidden; }
+      @media screen and (max-width: 764px) {
+        header.mainHeader .headerWrapper .noSlideWrapper {
+          width: 1000px;
+          height: 640px; } }
       header.mainHeader .headerWrapper .noSlideWrapper .noSlide {
+        max-width: 100%;
         width: 100%;
         height: auto;
-        min-width: 812px;
         overflow: hidden; }
-        @media screen and (max-width: 806px) {
+        @media screen and (max-width: 764px) {
           header.mainHeader .headerWrapper .noSlideWrapper .noSlide {
-            position: absolute;
-            left: 0;
-            top: 0; } }
+            width: 1000px;
+            height: auto; } }
     header.mainHeader .headerWrapper .headerContacts {
       background: #fff;
       width: 318px;
@@ -443,6 +414,17 @@ header.mainHeader {
       @media screen and (max-width: 974px) {
         header.mainHeader .headerWrapper .headerSpan {
           font-size: 18px; } }
+      @media screen and (max-width: 671px) {
+        header.mainHeader .headerWrapper .headerSpan {
+          width: 33%;
+          font-size: 14px; } }
+      @media screen and (max-width: 372px) {
+        header.mainHeader .headerWrapper .headerSpan {
+          top: 100px;
+          left: 80px;
+          width: 50%;
+          font-size: 14px;
+          font-family: GothamProMedium; } }
     header.mainHeader .headerWrapper .phoneHeader {
       background: url(icon/010-smartphone-call.png) no-repeat;
       height: 30px;
@@ -459,6 +441,16 @@ header.mainHeader {
       @media screen and (max-width: 1000px) {
         header.mainHeader .headerWrapper .phoneHeader {
           right: 760px; } }
+      @media screen and (max-width: 671px) {
+        header.mainHeader .headerWrapper .phoneHeader {
+          width: 20px;
+          height: 20px; } }
+      @media screen and (max-width: 372px) {
+        header.mainHeader .headerWrapper .phoneHeader {
+          top: 105px;
+          left: 36px;
+          width: 30px;
+          height: 30px; } }
     header.mainHeader .headerWrapper .numberHeader {
       font-size: 26px;
       color: #333333;
@@ -479,6 +471,22 @@ header.mainHeader {
       @media screen and (max-width: 974px) {
         header.mainHeader .headerWrapper .numberHeader {
           font-size: 24px; } }
+      @media screen and (max-width: 671px) {
+        header.mainHeader .headerWrapper .numberHeader {
+          width: 33%;
+          font-size: 16px;
+          left: 280px;
+          top: 87px; } }
+      @media screen and (max-width: 513px) {
+        header.mainHeader .headerWrapper .numberHeader {
+          left: 180px; } }
+      @media screen and (max-width: 372px) {
+        header.mainHeader .headerWrapper .numberHeader {
+          font-size: 20px;
+          left: 80px;
+          top: 120px;
+          width: 65%;
+          font-family: GothamProBold; } }
     header.mainHeader .headerWrapper .bigHeader {
       font-family: GothamProBlack;
       font-size: 69px;
@@ -508,6 +516,20 @@ header.mainHeader {
           height: auto;
           left: 100px;
           top: 25%; } }
+      @media screen and (max-width: 671px) {
+        header.mainHeader .headerWrapper .bigHeader {
+          width: 40%;
+          font-size: 35px; } }
+      @media screen and (max-width: 513px) {
+        header.mainHeader .headerWrapper .bigHeader {
+          left: 20px; } }
+      @media screen and (max-width: 372px) {
+        header.mainHeader .headerWrapper .bigHeader {
+          top: 255px;
+          left: 35px;
+          font-size: 26px;
+          line-height: 35px;
+          width: 246px; } }
     header.mainHeader .headerWrapper .sale {
       font-family: GothamProLight;
       font-size: 32px;
@@ -531,6 +553,20 @@ header.mainHeader {
           width: 338px;
           top: 53%;
           line-height: 40px; } }
+      @media screen and (max-width: 640px) {
+        header.mainHeader .headerWrapper .sale {
+          font-size: 18px;
+          width: 50%; } }
+      @media screen and (max-width: 513px) {
+        header.mainHeader .headerWrapper .sale {
+          right: 320px; } }
+      @media screen and (max-width: 372px) {
+        header.mainHeader .headerWrapper .sale {
+          top: 420px;
+          left: 35px;
+          font-size: 20px;
+          width: 60%;
+          line-height: 35px; } }
     header.mainHeader .headerWrapper .btn {
       width: 290px;
       height: 70px;
@@ -560,6 +596,17 @@ header.mainHeader {
           right: 580px;
           top: 600px;
           width: 260px; } }
+      @media screen and (max-width: 513px) {
+        header.mainHeader .headerWrapper .btn {
+          left: 100px; } }
+      @media screen and (max-width: 372px) {
+        header.mainHeader .headerWrapper .btn {
+          top: 500px;
+          left: 35px;
+          font-size: 16px;
+          line-height: 65px;
+          width: 220px;
+          height: 66px; } }
       header.mainHeader .headerWrapper .btn a {
         color: inherit;
         text-decoration: none; }
@@ -568,6 +615,12 @@ header.mainHeader {
   padding-top: 100px;
   padding-left: 74px;
   width: 100%; }
+  @media screen and (max-width: 600px) {
+    .location {
+      padding-left: 20px; } }
+  @media screen and (max-width: 372px) {
+    .location {
+      padding-top: 20px; } }
   .location .locWrapper {
     max-width: 100%;
     margin-left: 0 auto; }
@@ -585,24 +638,41 @@ header.mainHeader {
           margin-left: 20px;
           text-align: left;
           font-size: 48px; } }
+      @media screen and (max-width: 805px) {
+        .location .locWrapper .h1 {
+          width: 90%; } }
+      @media screen and (max-width: 640px) {
+        .location .locWrapper .h1 {
+          font-size: 26px; } }
+      @media screen and (max-width: 372px) {
+        .location .locWrapper .h1 {
+          font-size: 26px; } }
     .location .locWrapper .locText {
       font-family: Roboto-Light;
       color: #333333;
       font-size: 20px;
       width: 674px;
-      height: 218px;
       line-height: 39px;
       margin: 55px auto 100px auto; }
       @media screen and (max-width: 1000px) {
         .location .locWrapper .locText {
           width: 591px;
           margin-left: 20px; } }
+      @media screen and (max-width: 805px) {
+        .location .locWrapper .locText {
+          width: 90%; } }
+      @media screen and (max-width: 372px) {
+        .location .locWrapper .locText {
+          line-height: 24px;
+          font-size: 16px;
+          padding-right: 30px;
+          margin-bottom: 20px; } }
       .location .locWrapper .locText .locTextSpan {
         font-family: Roboto-Bold; }
     .location .locWrapper .arrowCont {
       width: 100%;
       height: 150px;
-      padding-left: 10%;
+      padding-left: 8%;
       margin-top: 5%; }
       @media screen and (max-width: 957px) {
         .location .locWrapper .arrowCont {
@@ -612,19 +682,30 @@ header.mainHeader {
         font-size: 32px;
         color: #333;
         text-align: left; }
+        @media screen and (max-width: 372px) {
+          .location .locWrapper .arrowCont .natureArrow {
+            font-size: 20px;
+            line-height: 79px; } }
       .location .locWrapper .arrowCont .nextArrow {
-        height: 50px;
-        padding-left: 25px; }
-        @media screen and (max-width: 1000px) {
+        height: 50px; }
+        @media screen and (max-width: 372px) {
           .location .locWrapper .arrowCont .nextArrow {
-            padding-left: 5px; } }
+            width: 30px;
+            height: 30px; } }
       .location .locWrapper .arrowCont .prevArrow {
         height: 50px; }
+        @media screen and (max-width: 372px) {
+          .location .locWrapper .arrowCont .prevArrow {
+            width: 30px;
+            height: 30px; } }
     .location .locWrapper .imgBoxCont {
       display: grid;
       grid-template-columns: 100%; }
       .location .locWrapper .imgBoxCont .imgBox {
         margin-left: 0; }
+        @media screen and (max-width: 372px) {
+          .location .locWrapper .imgBoxCont .imgBox .slick-list {
+            height: 160px; } }
         .location .locWrapper .imgBoxCont .imgBox .slick-slide {
           margin: 0;
           padding: 0;
@@ -647,13 +728,17 @@ header.mainHeader {
           position: absolute; }
 
 .infrastructure {
-  width: 90%;
+  width: 100%;
   padding-left: 74px;
   padding-top: 55px;
   padding-bottom: 100px; }
+  @media screen and (max-width: 805px) {
+    .infrastructure {
+      padding-left: 0; } }
   .infrastructure .infWrapper {
     width: 100%;
-    display: grid; }
+    display: flex;
+    flex-direction: column; }
     .infrastructure .infWrapper .h1 {
       color: #273441;
       font-family: GothamProBold;
@@ -666,6 +751,21 @@ header.mainHeader {
           text-align: left;
           margin-left: 50px;
           font-size: 48px; } }
+      @media screen and (max-width: 805px) {
+        .infrastructure .infWrapper .h1 {
+          width: 100%;
+          font-size: 48px; } }
+      @media screen and (max-width: 640px) {
+        .infrastructure .infWrapper .h1 {
+          font-size: 26px;
+          width: 95%; } }
+      @media screen and (max-width: 805px) {
+        .infrastructure .infWrapper .h1 {
+          margin-top: 20px; } }
+      @media screen and (max-width: 372px) {
+        .infrastructure .infWrapper .h1 {
+          font-size: 26px;
+          width: 50%; } }
     .infrastructure .infWrapper .locText {
       font-family: Roboto-Light;
       color: #333333;
@@ -677,6 +777,11 @@ header.mainHeader {
         .infrastructure .infWrapper .locText {
           margin-left: 50px;
           width: 70%; } }
+      @media screen and (max-width: 372px) {
+        .infrastructure .infWrapper .locText {
+          line-height: 24px;
+          font-size: 16px;
+          margin-top: 30px; } }
       .infrastructure .infWrapper .locText .infSpan1 {
         font-family: Roboto-Bold;
         font-size: 18px;
@@ -700,7 +805,7 @@ header.mainHeader {
           .infrastructure .infWrapper .locText .infSpan2 {
             font-size: 15px; } }
     .infrastructure .infWrapper .imgInf {
-      width: 1248px;
+      width: 95%;
       height: auto;
       margin: 0 auto; }
 
@@ -713,16 +818,28 @@ header.mainHeader {
   @media screen and (max-width: 1452px) {
     .advantages {
       width: 100%; } }
+  @media screen and (max-width: 372px) {
+    .advantages {
+      padding-left: 0; } }
   .advantages .advWrapper {
     display: flex;
     justify-content: center;
     flex-direction: row; }
+    @media screen and (max-width: 372px) {
+      .advantages .advWrapper {
+        flex-wrap: wrap; } }
     .advantages .advWrapper .adv1, .advantages .advWrapper .adv2, .advantages .advWrapper .adv3 {
       flex: 1;
       padding-bottom: 5%;
       padding-left: 3%;
       padding-right: 3%;
       padding-top: 20%; }
+      @media screen and (max-width: 372px) {
+        .advantages .advWrapper .adv1, .advantages .advWrapper .adv2, .advantages .advWrapper .adv3 {
+          padding-top: 50%;
+          padding-left: 10%;
+          padding-right: 10%;
+          padding-bottom: 10%; } }
       .advantages .advWrapper .adv1 .advTextSpan1, .advantages .advWrapper .adv2 .advTextSpan1, .advantages .advWrapper .adv3 .advTextSpan1 {
         padding-bottom: 5%;
         font-size: 40px;
@@ -757,6 +874,7 @@ header.mainHeader {
 
 .cards {
   width: 95%;
+  margin: 0 auto;
   margin-top: 100px;
   padding-left: 76px; }
   @media screen and (max-width: 1268px) {
@@ -766,16 +884,18 @@ header.mainHeader {
     .cards {
       width: 90%;
       padding-left: 65px; } }
+  @media screen and (max-width: 600px) {
+    .cards {
+      padding-left: 20px; } }
+  @media screen and (max-width: 372px) {
+    .cards {
+      padding-left: 0; } }
   .cards .cardsWrapper {
     width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 483px 760px;
+    display: flex;
+    flex-direction: column;
     justify-content: center; }
-    @media screen and (max-width: 1268px) {
-      .cards .cardsWrapper {
-        grid-template-rows: 21% 50%;
-        grid-template-columns: 1fr; } }
     @media screen and (max-width: 1000px) {
       .cards .cardsWrapper {
         grid-template-rows: 21% 50%;
@@ -811,6 +931,14 @@ header.mainHeader {
           width: 100%;
           height: auto;
           justify-content: center; } }
+      @media screen and (max-width: 706px) {
+        .cards .cardsWrapper .iconCards {
+          grid-template-columns: repeat(2, 50%);
+          grid-template-rows: 134px 134px 134px; } }
+      @media screen and (max-width: 372px) {
+        .cards .cardsWrapper .iconCards {
+          padding-left: 0;
+          margin-left: 0; } }
       .cards .cardsWrapper .iconCards .icon1, .cards .cardsWrapper .iconCards .icon2, .cards .cardsWrapper .iconCards .icon3, .cards .cardsWrapper .iconCards .icon4, .cards .cardsWrapper .iconCards .icon5, .cards .cardsWrapper .iconCards .icon6 {
         width: 236px;
         height: 236px;
@@ -911,6 +1039,10 @@ header.mainHeader {
         padding-top: 40px; }
         @media screen and (max-width: 1000px) {
           .cards .cardsWrapper .descCards .descCardsWrapper1, .cards .cardsWrapper .descCards .descCardsWrapper2, .cards .cardsWrapper .descCards .descCardsWrapper3, .cards .cardsWrapper .descCards .descCardsWrapper4, .cards .cardsWrapper .descCards .descCardsWrapper5, .cards .cardsWrapper .descCards .descCardsWrapper6 {
+            padding: 30px;
+            padding-right: 0; } }
+        @media screen and (max-width: 1000px) {
+          .cards .cardsWrapper .descCards .descCardsWrapper1, .cards .cardsWrapper .descCards .descCardsWrapper2, .cards .cardsWrapper .descCards .descCardsWrapper3, .cards .cardsWrapper .descCards .descCardsWrapper4, .cards .cardsWrapper .descCards .descCardsWrapper5, .cards .cardsWrapper .descCards .descCardsWrapper6 {
             width: 100%; } }
         .cards .cardsWrapper .descCards .descCardsWrapper1 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardTitle {
           font-family: GothamProBold;
@@ -922,17 +1054,34 @@ header.mainHeader {
             .cards .cardsWrapper .descCards .descCardsWrapper1 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardTitle {
               font-size: 48px;
               width: 87%; } }
+          @media screen and (max-width: 372px) {
+            .cards .cardsWrapper .descCards .descCardsWrapper1 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardTitle {
+              font-size: 26px;
+              line-height: 35px; } }
         .cards .cardsWrapper .descCards .descCardsWrapper1 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardDesk1 {
           color: #333333;
           font-size: 20px;
           line-height: 39px;
           padding-bottom: 40px;
-          width: 80%; }
+          width: 80%;
+          font-family: Roboto-Light; }
+          @media screen and (max-width: 372px) {
+            .cards .cardsWrapper .descCards .descCardsWrapper1 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardDesk1, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardDesk1 {
+              font-size: 16px;
+              line-height: 24px;
+              margin-right: 0;
+              width: 100%; } }
         .cards .cardsWrapper .descCards .descCardsWrapper1 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardDesk2 {
           color: #333;
           font-size: 20px;
           line-height: 39px;
           width: 80%; }
+          @media screen and (max-width: 372px) {
+            .cards .cardsWrapper .descCards .descCardsWrapper1 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardDesk2 {
+              font-size: 16px;
+              line-height: 24px;
+              margin-right: 0;
+              width: 100%; } }
 
 .lol {
   width: 100px;
@@ -945,11 +1094,18 @@ header.mainHeader {
 .bigPicture {
   width: 95%;
   padding-top: 180px;
-  padding-left: 30px;
   padding-left: 74px; }
+  @media screen and (max-width: 372px) {
+    .bigPicture {
+      padding: 0;
+      padding-left: 0;
+      width: 100%; } }
   .bigPicture .bpWrapper {
     width: 100%;
     position: relative; }
+    @media screen and (max-width: 372px) {
+      .bigPicture .bpWrapper {
+        padding-left: 0; } }
     .bigPicture .bpWrapper .slick-dots {
       display: flex;
       justify-content: center;
@@ -969,17 +1125,49 @@ header.mainHeader {
       @media screen and (max-width: 1400px) {
         .bigPicture .bpWrapper .slick-dots {
           left: 35.5%; } }
+      @media screen and (max-width: 1000px) {
+        .bigPicture .bpWrapper .slick-dots {
+          padding-top: 10px;
+          width: 130px;
+          height: 36px;
+          left: 40.5%; } }
+      @media screen and (max-width: 372px) {
+        .bigPicture .bpWrapper .slick-dots {
+          left: 30%; } }
+      @media screen and (max-width: 1000px) {
+        .bigPicture .bpWrapper .slick-dots li.slick-active {
+          width: 12px;
+          height: 12px; } }
       .bigPicture .bpWrapper .slick-dots li.slick-active button {
         background: url("img/Эллипс 2 копия.png") no-repeat;
         text-indent: -9999px;
         overflow: hidden; }
+        @media screen and (max-width: 1000px) {
+          .bigPicture .bpWrapper .slick-dots li.slick-active button {
+            background-size: 40% 40%;
+            margin: 0; } }
+      @media screen and (max-width: 1000px) {
+        .bigPicture .bpWrapper .slick-dots li {
+          width: 12px;
+          height: 12px; } }
       .bigPicture .bpWrapper .slick-dots li button {
         background: url("img/Эллипс 2.png") no-repeat;
         text-indent: -9999px;
         overflow: hidden; }
+        @media screen and (max-width: 1000px) {
+          .bigPicture .bpWrapper .slick-dots li button {
+            background-size: 40% 40%;
+            margin: 0; } }
     .bigPicture .bpWrapper .bpImgWrapper {
       z-index: 0;
-      margin-left: -5px; }
+      margin-left: -5px;
+      width: 100%; }
+      @media screen and (max-width: 372px) {
+        .bigPicture .bpWrapper .bpImgWrapper {
+          padding-top: 60px; } }
+      @media screen and (max-width: 372px) {
+        .bigPicture .bpWrapper .bpImgWrapper .slick-track {
+          height: 200px; } }
     .bigPicture .bpWrapper .bpArrow {
       z-index: 1;
       width: 293px;
@@ -990,6 +1178,12 @@ header.mainHeader {
       @media screen and (max-width: 1400px) {
         .bigPicture .bpWrapper .bpArrow {
           left: 35%; } }
+      @media screen and (max-width: 1000px) {
+        .bigPicture .bpWrapper .bpArrow {
+          width: 30%; } }
+      @media screen and (max-width: 525px) {
+        .bigPicture .bpWrapper .bpArrow {
+          width: 20%; } }
       .bigPicture .bpWrapper .bpArrow .bpArrowWrapper {
         width: 222px;
         height: 62px;
@@ -999,12 +1193,28 @@ header.mainHeader {
         @media screen and (max-width: 1500px) {
           .bigPicture .bpWrapper .bpArrow .bpArrowWrapper {
             margin: 8px 30px 0 0; } }
+        @media screen and (max-width: 1000px) {
+          .bigPicture .bpWrapper .bpArrow .bpArrowWrapper {
+            width: 140px;
+            margin-left: 32px;
+            margin-top: 0; } }
+        @media screen and (max-width: 372px) {
+          .bigPicture .bpWrapper .bpArrow .bpArrowWrapper {
+            margin-left: -25px; } }
         .bigPicture .bpWrapper .bpArrow .bpArrowWrapper .prevArrow1 {
           width: 60px;
           height: 60px; }
+          @media screen and (max-width: 1000px) {
+            .bigPicture .bpWrapper .bpArrow .bpArrowWrapper .prevArrow1 {
+              width: 30px;
+              height: 30px; } }
         .bigPicture .bpWrapper .bpArrow .bpArrowWrapper .nextArrow1 {
           width: 60px;
           height: 60px; }
+          @media screen and (max-width: 1000px) {
+            .bigPicture .bpWrapper .bpArrow .bpArrowWrapper .nextArrow1 {
+              width: 30px;
+              height: 30px; } }
         .bigPicture .bpWrapper .bpArrow .bpArrowWrapper .point {
           padding-bottom: 25px;
           padding-left: 13px;
@@ -1022,6 +1232,7 @@ header.mainHeader {
       width: 1058px;
       height: 541px;
       background: #fff;
+      padding: 0 30px;
       left: 26%;
       top: -135px; }
       @media screen and (max-width: 1000px) {
@@ -1038,13 +1249,28 @@ header.mainHeader {
           height: auto;
           left: 0;
           top: 0; } }
+      @media screen and (max-width: 372px) {
+        .bigPicture .arWrapper .arDesc {
+          margin-top: -70px; } }
       .bigPicture .arWrapper .arDesc .arContent {
         width: 100%;
         background: #fff;
-        padding: 72px 100px; }
+        padding: 72px 100px;
+        color: #333; }
         @media screen and (max-width: 1000px) {
           .bigPicture .arWrapper .arDesc .arContent {
             margin: 72px 50px; } }
+        @media screen and (max-width: 600px) {
+          .bigPicture .arWrapper .arDesc .arContent {
+            margin: 72px 0px; } }
+        @media screen and (max-width: 640px) {
+          .bigPicture .arWrapper .arDesc .arContent {
+            padding: 36px 10%; } }
+        @media screen and (max-width: 372px) {
+          .bigPicture .arWrapper .arDesc .arContent {
+            padding: 0;
+            padding-left: 10px;
+            margin: 0; } }
         .bigPicture .arWrapper .arDesc .arContent .arContDesc {
           font-size: 20px;
           line-height: 39px;
@@ -1052,11 +1278,20 @@ header.mainHeader {
           font-family: Roboto-Light;
           padding-top: 35px;
           width: 80%; }
+          @media screen and (max-width: 372px) {
+            .bigPicture .arWrapper .arDesc .arContent .arContDesc {
+              font-size: 16px;
+              line-height: 24px;
+              width: 100%;
+              padding-top: 20px; } }
         .bigPicture .arWrapper .arDesc .arContent .arContTitle {
           font-family: GothamProBold;
           font-size: 66px;
           line-height: 79px;
           color: #273441; }
+          @media screen and (max-width: 736px) {
+            .bigPicture .arWrapper .arDesc .arContent .arContTitle {
+              font-size: 26px; } }
   .bigPicture .map {
     padding-top: 407px;
     width: 95%; }
@@ -1066,39 +1301,49 @@ header.mainHeader {
     @media screen and (max-width: 1000px) {
       .bigPicture .map {
         padding-top: 50px; } }
+    @media screen and (max-width: 372px) {
+      .bigPicture .map {
+        padding-top: 0; } }
     .bigPicture .map .mapWrapper {
       width: 100%;
       height: 100%;
-      display: grid;
-      grid-template-columns: 1.5fr 1fr;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       grid-template-rows: 720px;
       justify-content: end; }
-      @media screen and (max-width: 1655px) {
-        .bigPicture .map .mapWrapper {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr; } }
-      @media screen and (max-width: 1000px) {
-        .bigPicture .map .mapWrapper {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 0.5fr; } }
       .bigPicture .map .mapWrapper .forMapDesc {
         height: 100%; }
         .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent {
           width: 100%;
           height: 460px;
           padding-left: 100px; }
+          @media screen and (max-width: 372px) {
+            .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent {
+              padding-left: 15px;
+              padding-top: 30px;
+              padding-left: 30px; } }
           .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .mapDescTitle {
             font-size: 42px;
             line-height: 52px;
             font-family: GothamProBold;
             color: #333;
             margin-bottom: 40px; }
+            @media screen and (max-width: 453px) {
+              .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .mapDescTitle {
+                font-size: 26px;
+                line-height: 35px; } }
           .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .mapDescCont {
             font-size: 20px;
             line-height: 39px;
             font-family: Roboto-Light;
             margin-bottom: 60px;
             width: 60%; }
+            @media screen and (max-width: 372px) {
+              .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .mapDescCont {
+                font-size: 16px;
+                line-height: 24px;
+                width: 95%; } }
           .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .buttonOnMap {
             width: 335px;
             height: 70px;
@@ -1115,11 +1360,23 @@ header.mainHeader {
             font-family: GothamProBold;
             color: #fff;
             margin-bottom: 50px; }
+            @media screen and (max-width: 372px) {
+              .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .buttonOnMap {
+                font-size: 16px;
+                line-height: 60px;
+                width: 230px;
+                height: 60px; } }
+            @media screen and (max-width: 300px) {
+              .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .buttonOnMap {
+                margin: 0 auto; } }
           .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .mapNumber {
             font-size: 28px;
             line-height: 79px;
             font-family: GothamProBold;
             padding-left: 35px; }
+            @media screen and (max-width: 372px) {
+              .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .mapNumber {
+                display: none; } }
       .bigPicture .map .mapWrapper .forMap {
         width: 100%;
         height: 40%; }
@@ -1131,6 +1388,9 @@ header.mainHeader {
   width: 98%;
   border-top: 1px solid #b6b6b6;
   padding-left: 80px; }
+  @media screen and (max-width: 372px) {
+    .footer {
+      padding-left: 30px; } }
   .footer .footerSupportWrapper {
     width: 100%;
     display: grid;
@@ -1142,6 +1402,10 @@ header.mainHeader {
       .footer .footerSupportWrapper {
         grid-template-columns: 30% 30%;
         grid-template-rows: 1fr 1fr; } }
+    @media screen and (max-width: 372px) {
+      .footer .footerSupportWrapper {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 30%; } }
     .footer .footerSupportWrapper .sber, .footer .footerSupportWrapper .bspb, .footer .footerSupportWrapper .cjd, .footer .footerSupportWrapper .sreda {
       margin-top: 50px; }
     .footer .footerSupportWrapper .iconFooter {
@@ -1182,13 +1446,19 @@ header.mainHeader {
     .footer .social .secDiv {
       width: 280px;
       margin: 55px auto 0 auto; }
+      @media screen and (max-width: 372px) {
+        .footer .social .secDiv {
+          width: 50%; } }
     .footer .social .secret {
       display: inline-block;
       width: 100%;
       font-family: GothamProLight;
       font-size: 18px;
-      color: #5081b8;
-      margin: 0 auto; }
+      color: #5081b8; }
+      @media screen and (max-width: 372px) {
+        .footer .social .secret {
+          font-size: 12px;
+          width: 80%; } }
 
 @media screen and (max-width: 1772px) {
   #crossslide {

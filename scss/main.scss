@@ -51,42 +51,42 @@ body{
 html{
 	height: auto!important;
 	overflow-x:hidden;
-	@media screen and (max-width: 806px){
-		width: 130%;
-	}
-	@media screen and (max-width: 631px){
-		width: 140%;
-	}
-	@media screen and (max-width: 562px){
-		width: 160%;
-	}
-	@media screen and (max-width: 492px){
-		width: 170%;
-	}
-	@media screen and (max-width: 492px){
-		width: 180%;
-	}
-	@media screen and (max-width: 426px){
-		width: 190%;
-	}
-	@media screen and (max-width: 404px){
-		width: 200%;
-	}
-	@media screen and (max-width: 382px){
-		width: 215%;
-	}
-	@media screen and (max-width: 351px){
-		width: 225%;
-	}
-	@media screen and (max-width: 325px){
-		width: 245%;
-	}
-	@media screen and (max-width: 307px){
-		width: 255%;
-	}
-	@media screen and (max-width: 285px){
-		width: 275%;
-	}
+// 	@media screen and (max-width: 806px){
+// 		width: 130%;
+// 	}
+// 	@media screen and (max-width: 631px){
+// 		width: 140%;
+// 	}
+// 	@media screen and (max-width: 562px){
+// 		width: 160%;
+// 	}
+// 	@media screen and (max-width: 492px){
+// 		width: 170%;
+// 	}
+// 	@media screen and (max-width: 492px){
+// 		width: 180%;
+// 	}
+// 	@media screen and (max-width: 426px){
+// 		width: 190%;
+// 	}
+// 	@media screen and (max-width: 404px){
+// 		width: 200%;
+// 	}
+// 	@media screen and (max-width: 382px){
+// 		width: 215%;
+// 	}
+// 	@media screen and (max-width: 351px){
+// 		width: 225%;
+// 	}
+// 	@media screen and (max-width: 325px){
+// 		width: 245%;
+// 	}
+// 	@media screen and (max-width: 307px){
+// 		width: 255%;
+// 	}
+// 	@media screen and (max-width: 285px){
+// 		width: 275%;
+// 	}
 }
 li{
 	list-style-type: none;
@@ -339,13 +339,16 @@ header.mainHeader{
 		// grid-template-columns: 1830px;
 		height: 938px;
 		overflow: hidden;
+		@media screen and (max-width: 372px){
+			height: 640px;
+		}
 		.entryHeader{
 			background: #fff;
 			// display: none;
 			position: fixed;
 			margin-bottom: 55%;
 			z-index: 3;
-			height: 938px;
+			height: 2000px;
 			border-right: 1px solid #333;
 			@media screen and (max-width: 640px){
 				display: none;
@@ -441,29 +444,26 @@ header.mainHeader{
 		}
 		.noSlideWrapper{
 			width: 100%;
-			height: auto;
+			height: 100%;
+			max-height: 1000px;
 			overflow: hidden;
-			@media screen and (max-width: 806px){
+			@media screen and (max-width: 764px){
+				width: 1000px;
+				height: 640px;
+			}
+			@media screen and (max-width: 513px){
 
 			}
 			.noSlide{
-				// position: absolute;
-				// left: 0;
-				// top: 0;
+				max-width: 100%;
 				width: 100%;
 				height: auto;
-				// min-height: 938px;
-				// max-height: 938px;
-				min-width: 812px;
 				overflow: hidden;
 				@media screen and (max-width: 1000px){
 				}
-				@media screen and (max-width: 806px){
-					// width: 1000px;
-					// height: auto;
-					position: absolute;
-					left: 0;
-					top: 0;
+				@media screen and (max-width: 764px){
+					width: 1000px;
+					height: auto;
 				}
 			}
 		}
@@ -567,6 +567,17 @@ header.mainHeader{
 			@media screen and (max-width: 974px){
 				font-size: 18px;
 			}
+			@media screen and (max-width: 671px){
+				width: 33%;
+				font-size: 14px;
+			}
+			@media screen and (max-width: 372px){
+				top: 100px;
+				left: 80px;
+				width: 50%;
+				font-size: 14px;
+				font-family: $gm;
+			}
 		}
 		.phoneHeader{  
 		    background: url(icon/010-smartphone-call.png) no-repeat;    
@@ -583,6 +594,16 @@ header.mainHeader{
 			}
 		    @media screen and (max-width: 1000px){
 				right: 760px;
+			}
+			@media screen and (max-width: 671px){
+				width: 20px;
+				height: 20px;
+			}
+			@media screen and (max-width: 372px){
+				top: 105px;
+				left: 36px;
+				width: 30px;
+				height: 30px;
 			}
 		}
 		.numberHeader{
@@ -605,6 +626,23 @@ header.mainHeader{
 			@media screen and (max-width: 974px){
 				font-size: 24px;
 			}
+			@media screen and (max-width: 671px){
+				width: 33%;
+				font-size: 16px;
+				left: 280px;
+				top: 87px;
+			}
+			@media screen and (max-width: 513px){
+				left: 180px;
+			}
+			@media screen and (max-width: 372px){
+				font-size: 20px;
+				left: 80px;
+				top: 120px;
+				width: 65%;
+				font-family: $gb;
+			}
+
 
 		}
 		.bigHeader{
@@ -636,6 +674,20 @@ header.mainHeader{
 				left: 100px;
 				top: 25%;
 			}
+			@media screen and (max-width: 671px){
+				width: 40%;
+				font-size: 35px;
+			}
+			@media screen and (max-width: 513px){
+				left: 20px;
+			}
+			@media screen and (max-width: 372px){
+				top: 255px;
+				left: 35px;
+				font-size: 26px;
+				line-height: 35px;
+				width: 246px;
+			}
 		}
 		.sale{
 			font-family: $gl;
@@ -659,6 +711,20 @@ header.mainHeader{
 				width: 338px;
 				top: 53%;
 				line-height: 40px;
+			}
+			@media screen and (max-width: 640px){
+				font-size: 18px;
+				width: 50%;
+			}
+			@media screen and (max-width: 513px){
+				right: 320px;
+			}
+			@media screen and (max-width: 372px){
+				top: 420px;
+				left: 35px;
+				font-size: 20px;
+				width: 60%;
+				line-height: 35px;
 			}
 		}
 		.btn{
@@ -690,6 +756,17 @@ header.mainHeader{
 				top: 600px;
 				width: 260px;
 			}
+			@media screen and (max-width: 513px){
+				left: 100px;
+			}
+			@media screen and (max-width: 372px){
+				top: 500px;
+				left: 35px;
+				font-size: 16px;
+				line-height: 65px;
+				width: 220px;
+				height: 66px;
+			}
 			a{
 				color: inherit;
 				text-decoration: none;
@@ -703,6 +780,12 @@ header.mainHeader{
 	padding-left: 74px;
 	width: 100%;
 	// height: 900px;
+	@media screen and (max-width: 600px){
+		padding-left: 20px;
+	}
+		@media screen and (max-width: 372px){
+			padding-top: 20px;
+		}
 	.locWrapper{
 		max-width: 100%;
 		margin-left: 0 auto;
@@ -720,20 +803,36 @@ header.mainHeader{
 				text-align: left;
 				font-size: 48px;
 			}
+			@media screen and (max-width: 805px){
+				width: 90%;
+			}
+			@media screen and (max-width: 640px){
+				font-size: 26px;
+			}
+			@media screen and (max-width: 372px){
+				font-size: 26px;
+			}
 		}
 		.locText{
 			font-family: $rl;
 			color: #333333;
 			font-size: 20px;
 			width: 674px;
-			height: 218px;
 			line-height: 39px;
 			margin: 55px auto 100px auto;
 			@media screen and (max-width: 1000px){
 				width: 591px;
 				margin-left: 20px;
 			}
-
+			@media screen and (max-width: 805px){
+				width: 90%;
+			}
+			@media screen and (max-width: 372px){
+				line-height: 24px;
+				font-size: 16px;
+				padding-right: 30px;
+				margin-bottom: 20px;
+			}
 			.locTextSpan{
 				font-family: $rb;
 			}
@@ -741,7 +840,7 @@ header.mainHeader{
 		.arrowCont{
 			width: 100%;
 			height: 150px;
-			padding-left: 10%;
+			padding-left: 8%;
 			margin-top: 5%;
 			@media screen and (max-width: 1300px){
 				// padding-left: 5px;
@@ -755,13 +854,21 @@ header.mainHeader{
 				font-size: 32px;
 				color: #333;
 				text-align: left;
+				@media screen and (max-width: 372px){
+					font-size: 20px;
+					line-height: 79px;
+				}
 			}
 			.nextArrow{
 				// width: 45px;
 				height: 50px;
-				padding-left: 25px;
+				// padding-left: 25px;
 				@media screen and (max-width: 1000px){
-					padding-left: 5px;
+					// padding-left: 5px;
+				}
+				@media screen and (max-width: 372px){
+					width: 30px;
+					height: 30px;
 				}
 			}
 			.prevArrow{
@@ -773,6 +880,10 @@ header.mainHeader{
 				}
 				@media screen and (max-width: 755px){
 					// padding-left: 60px;
+				}
+				@media screen and (max-width: 372px){
+					width: 30px;
+					height: 30px;
 				}
 			}
 		}
@@ -787,6 +898,16 @@ header.mainHeader{
 			}
 			.imgBox{
 				margin-left: 0;
+				.slick-list{
+					@media screen and (max-width: 372px){
+						height: 160px;
+					}
+				}
+				.slick-track{
+					@media screen and (max-width: 372px){
+						
+					}
+				}
 				.slick-slide{
 					margin: 0;
 					padding: 0;
@@ -821,13 +942,17 @@ header.mainHeader{
 }
 
 .infrastructure{
-	width: 90%;
+	width: 100%;
 	padding-left: 74px;
 	padding-top: 55px;
 	padding-bottom: 100px;
+	@media screen and (max-width: 805px){
+		padding-left: 0;
+	}
 	.infWrapper{
 		width: 100%;
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		.h1{
 			color: #273441;
 			font-family: $gb;
@@ -840,6 +965,21 @@ header.mainHeader{
 				margin-left: 50px;
 				font-size: 48px;
 			}			
+			@media screen and (max-width: 805px){
+				width: 100%;
+				font-size: 48px;
+			}
+			@media screen and (max-width: 640px){
+				font-size: 26px;
+				width: 95%;
+			}
+			@media screen and (max-width: 805px){
+				margin-top: 20px;
+			}
+			@media screen and (max-width: 372px){
+				font-size: 26px;
+				width: 50%;
+			}
 		}
 		.locText{
 			font-family: $rl;
@@ -851,7 +991,12 @@ header.mainHeader{
 			@media screen and (max-width: 1000px){
 				margin-left: 50px;
 				width: 70%;
-			}		
+			}	
+			@media screen and (max-width: 372px){
+				line-height: 24px;
+				font-size: 16px;
+				margin-top: 30px;
+			}
 			.infSpan1{
 				font-family: $rb;
 				font-size: 18px;
@@ -878,7 +1023,7 @@ header.mainHeader{
 			}
 		}
 		.imgInf{
-			width: 1248px;
+			width: 95%;
 			height: auto;
 			margin: 0 auto;
 		}
@@ -894,18 +1039,28 @@ header.mainHeader{
 	@media screen and (max-width: 1452px){
 		width: 100%;
 	}
-	@media screen and (max-width: 795px){
+	@media screen and (max-width: 372px){
+		padding-left: 0;
 	}	
 	.advWrapper{
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
+		@media screen and (max-width: 372px){
+			flex-wrap: wrap;
+		}	
 		.adv1, .adv2, .adv3{
 			flex: 1;
 			padding-bottom: 5%;
 			padding-left: 3%;
 			padding-right: 3%;
 			padding-top: 20%;
+			@media screen and (max-width: 372px){
+				padding-top: 50%;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-bottom: 10%;
+			}	
 			.advTextSpan1{
 				padding-bottom: 5%;
 				font-size: 40px;
@@ -963,6 +1118,7 @@ header.mainHeader{
 .cards{
 	width: 95%;
 	// height: 725px;
+	margin: 0 auto;
 	margin-top: 100px;
 	padding-left: 76px;
 	@media screen and (max-width: 1268px){
@@ -972,21 +1128,27 @@ header.mainHeader{
 		width: 90%;
 		padding-left: 65px;
 	}
-
+	@media screen and (max-width: 600px){
+		padding-left: 20px;
+	}
+	@media screen and (max-width: 372px){
+		padding-left: 0;
+	}	
 	.cardsWrapper{
 		width: 100%;
 		margin: 0 auto;
-		display: grid;
-		grid-template-columns: 483px 760px;
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		@media screen and (max-width: 1268px){
-			grid-template-rows: 21% 50%;
-			grid-template-columns: 1fr;
+			// grid-template-rows: 21% 50%;
+			// grid-template-columns: 1fr;
 		}
 		@media screen and (max-width: 1000px){
 			grid-template-rows: 21% 50%;
 			grid-template-columns: 1fr;
 		}
+
 		.iconCards{
 			width: 483px;
 			height: 726px;
@@ -1019,6 +1181,14 @@ header.mainHeader{
 				height: auto;
 				justify-content: center;
 			}
+			@media screen and (max-width: 706px){
+				grid-template-columns: repeat(2, 50%);
+				grid-template-rows: 134px 134px 134px;
+			}	
+			@media screen and (max-width: 372px){
+				padding-left: 0;
+				margin-left: 0;
+			}	
 			.icon1, .icon2, .icon3, .icon4, .icon5, .icon6{
 				width: 236px;
 				height: 236px;
@@ -1133,6 +1303,10 @@ header.mainHeader{
 			.descCardsWrapper1, .descCardsWrapper2, .descCardsWrapper3, .descCardsWrapper4, .descCardsWrapper5, .descCardsWrapper6{
 				padding: 97px;
 				padding-top: 40px;
+				@media screen and (max-width: 1000px){
+					padding: 30px;
+					padding-right: 0;
+				}
 
 				@media screen and (max-width: 1000px){
 					width: 100%;
@@ -1147,6 +1321,10 @@ header.mainHeader{
 						font-size: 48px;
 						width: 87%;
 					}
+					@media screen and (max-width: 372px){
+						font-size: 26px;
+						line-height: 35px;
+					}
 				}
 				.cardDesk1{
 					color: #333333;
@@ -1154,12 +1332,25 @@ header.mainHeader{
 					line-height: 39px;
 					padding-bottom: 40px;
 					width: 80%;
+					font-family: $rl;
+					@media screen and (max-width: 372px){
+						font-size: 16px;
+						line-height: 24px;
+						margin-right: 0;
+						width: 100%;
+					}
 				}
 				.cardDesk2{
 					color: #333;
 					font-size: 20px;
 					line-height: 39px;
 					width: 80%;
+					@media screen and (max-width: 372px){
+						font-size: 16px;
+						line-height: 24px;
+						margin-right: 0;
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -1176,14 +1367,18 @@ header.mainHeader{
 .bigPicture{
 	width: 95%;
 	padding-top: 180px;
-	padding-left: 30px;
 	padding-left: 74px;
+	@media screen and (max-width: 372px){
+		padding: 0;
+		padding-left: 0;
+		width: 100%;
+	}
 	.bpWrapper{
 		width: 100%;
 		// height: 898px;
 		position: relative;
-		@media screen and (max-width: 1000px){
-			
+		@media screen and (max-width: 372px){
+			padding-left: 0;
 		}
 			.slick-dots{
 				display: flex;
@@ -1204,25 +1399,61 @@ header.mainHeader{
 				@media screen and (max-width: 1400px){
 					left: 35.5%;
 				}
-
+	    	   	@media screen and (max-width: 1000px){
+					padding-top: 10px;
+					width: 130px;
+					height: 36px;
+					left: 40.5%;
+				}
+				@media screen and (max-width: 372px){
+					left: 30%;
+				}
 			    li.slick-active{
+		    	   	@media screen and (max-width: 1000px){
+						width: 12px;
+						height: 12px;
+					}
 			    	button{
 			    		background: url('img/Эллипс 2 копия.png') no-repeat;
 			    		text-indent: -9999px;
    						overflow:hidden;
+   						@media screen and (max-width: 1000px){
+							background-size: 40% 40%;
+							margin: 0;
+						}
 			    	}
 			    }
 			    li{
+		 		@media screen and (max-width: 1000px){
+					width: 12px;
+					height: 12px;
+				}
 			    	button{
 			    		background: url('img/Эллипс 2.png') no-repeat;
 			    		text-indent: -9999px;
    						overflow:hidden;
+   						@media screen and (max-width: 1000px){
+							background-size: 40% 40%;
+							margin: 0;
+						}
 			    	}
 			    }
 			}
 		.bpImgWrapper{
 			z-index: 0;
 			margin-left: -5px;
+			width: 100%;
+			@media screen and (max-width: 372px){
+				padding-top: 60px;
+			}
+			.slick-dots{
+
+			}
+			.slick-track{
+				@media screen and (max-width: 372px){
+					height: 200px;
+				}
+			}
 		}
 		.bpArrow{
 			z-index: 1;
@@ -1234,23 +1465,46 @@ header.mainHeader{
 			@media screen and (max-width: 1400px){
 				left: 35%;
 			}
+			@media screen and (max-width: 1000px){
+				width: 30%;
+			}
+			@media screen and (max-width: 525px){
+				width: 20%;
+			}
+			@media screen and (max-width: 372px){
+							}
 			.bpArrowWrapper{
 				width: 222px;
 				height: 62px;
 				margin: 15px auto;
 				display: flex;
-				justify-content: space-between;;
+				justify-content: space-between;
 				@media screen and (max-width: 1500px){
 					margin: 8px 30px 0 0;
+				}
+				@media screen and (max-width: 1000px){
+					width: 140px;
+					margin-left: 32px;
+					margin-top: 0;
+				}
+				@media screen and (max-width: 372px){
+					margin-left: -25px;
 				}
 				.prevArrow1{
 					width: 60px;
 					height: 60px;
-
+					@media screen and (max-width: 1000px){
+						width: 30px;
+						height: 30px;
+					}
 				}
 				.nextArrow1{
 					width: 60px;
 					height: 60px;
+					@media screen and (max-width: 1000px){
+						width: 30px;
+						height: 30px;
+					}
 				}
 				.point{
 					padding-bottom: 25px;
@@ -1275,6 +1529,7 @@ header.mainHeader{
 			width: 1058px;
 			height: 541px;
 			background: #fff;
+			padding: 0 30px;
 			left: 26%;
 			top: -135px;
 			@media screen and (max-width: 1000px){
@@ -1291,12 +1546,27 @@ header.mainHeader{
 				left: 0;
 				top: 0;
 			}
+			@media screen and (max-width: 372px){
+				margin-top: -70px;
+			}
 			.arContent{
 				width: 100%;
 				background: #fff;
 				padding: 72px 100px;
+				color: #333;
 				@media screen and (max-width: 1000px){
 					margin: 72px 50px;
+				}
+				@media screen and (max-width: 600px){
+					margin: 72px 0px;
+				}
+				@media screen and (max-width: 640px){
+					padding: 36px 10%;
+				}
+				@media screen and (max-width: 372px){
+					padding: 0;
+					padding-left: 10px;
+					margin: 0;
 				}
 				.arContDesc{
 					font-size: 20px;
@@ -1305,12 +1575,22 @@ header.mainHeader{
 					font-family: $rl;
 					padding-top: 35px;
 					width: 80%;
+					@media screen and (max-width: 372px){
+						font-size: 16px;
+						line-height: 24px;
+						width: 100%;
+						padding-top: 20px;
+					
+					}
 				}
 				.arContTitle{
 					font-family: $gb;
 					font-size: 66px;
 					line-height: 79px;
 					color: #273441;
+					@media screen and (max-width: 736px){
+						font-size: 26px;					
+					}
 				}
 			}
 		}
@@ -1325,22 +1605,27 @@ header.mainHeader{
 		@media screen and (max-width: 1000px){
 			padding-top: 50px;
 		}
-
+		@media screen and (max-width: 372px){
+			padding-top: 0;
+		}
 		.mapWrapper{
 			width: 100%;
 			height: 100%;
-			display: grid;
-			grid-template-columns: 1.5fr 1fr;
+			// display: grid;
+			// grid-template-columns: 1.5fr 1fr;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
 			grid-template-rows: 720px;
 			justify-content: end;
-			@media screen and (max-width: 1655px){
-				grid-template-columns: 1fr;
-				grid-template-rows: 1fr 1fr;
-			}
-			@media screen and (max-width: 1000px){
-				grid-template-columns: 1fr;
-				grid-template-rows: 1fr 0.5fr;
-			}
+			// @media screen and (max-width: 1655px){
+			// 	grid-template-columns: 1fr;
+			// 	grid-template-rows: 1fr 1fr;
+			// }
+			// @media screen and (max-width: 1000px){
+			// 	grid-template-columns: 1fr;
+			// 	grid-template-rows: 1fr 0.5fr;
+			// }
 			.forMapDesc{
 				height: 100%;
 				.forMapDescContent{
@@ -1348,12 +1633,21 @@ header.mainHeader{
 					height: 460px;
 					padding-left: 100px;
 					// padding: 20px 0 260px 205px;
+					@media screen and (max-width: 372px){
+						padding-left: 15px;
+						padding-top: 30px;
+						padding-left: 30px;
+					}
 					.mapDescTitle{
 						font-size: 42px;
 						line-height: 52px;
 						font-family: $gb;
 						color: #333;
 						margin-bottom: 40px;
+						@media screen and (max-width: 453px){
+							font-size: 26px;
+							line-height: 35px;
+						}
 					}
 					.mapDescCont{
 						font-size: 20px;
@@ -1361,6 +1655,11 @@ header.mainHeader{
 						font-family: $rl;
 						margin-bottom: 60px;
 						width: 60%;
+						@media screen and (max-width: 372px){
+							font-size: 16px;
+							line-height: 24px;
+							width: 95%;
+						}
 					}
 					.buttonOnMap{
 						width: 335px;
@@ -1378,12 +1677,23 @@ header.mainHeader{
 						font-family: $gb;
 						color: #fff;
 						margin-bottom: 50px;
+						@media screen and (max-width: 372px){
+							font-size: 16px;
+							line-height: 60px;
+							width: 230px;
+							height: 60px;
+						}
+						@media screen and (max-width: 300px){
+							margin: 0 auto;						}
 					}
 					.mapNumber{
 						font-size: 28px;
 						line-height: 79px;
 						font-family: $gb;
 						padding-left: 35px;
+						@media screen and (max-width: 372px){
+							display: none;
+						}
 					}
 				}
 			}
@@ -1403,6 +1713,9 @@ header.mainHeader{
 	// height: 485px;
 	border-top: 1px solid #b6b6b6;
 	padding-left: 80px;
+	@media screen and (max-width: 372px){
+		padding-left: 30px;
+	}
 	.footerSupportWrapper{
 		width: 100%;
 		// height: 190px;
@@ -1414,6 +1727,10 @@ header.mainHeader{
 		@media screen and (max-width: 1280px){
 			grid-template-columns: 30% 30%;
 			grid-template-rows: 1fr 1fr;
+		}
+		@media screen and (max-width: 372px){
+			grid-template-columns: 50% 50%;
+			grid-template-rows: 30% 30%;
 		}
 		.sber, .bspb, .cjd, .sreda{
 			margin-top: 50px;
@@ -1465,6 +1782,9 @@ header.mainHeader{
 			.secDiv{
 				width: 280px;
 				margin: 55px auto 0 auto;
+				@media screen and (max-width: 372px){
+					width: 50%;
+				}
 			}
 			.secret{
 				display: inline-block;
@@ -1472,7 +1792,10 @@ header.mainHeader{
 				font-family: $gl;
 				font-size: 18px;
 				color: #5081b8;	
-				margin: 0 auto;
+				@media screen and (max-width: 372px){
+					font-size: 12px;
+					width: 80%;
+				}
 			}
 		}
 }
