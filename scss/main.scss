@@ -451,8 +451,8 @@ header.mainHeader{
 				width: 1000px;
 				height: 640px;
 			}
-			@media screen and (max-width: 513px){
-
+			@media screen and (max-width: 847px){
+				height: 740px;
 			}
 			.noSlide{
 				max-width: 100%;
@@ -675,11 +675,12 @@ header.mainHeader{
 				top: 25%;
 			}
 			@media screen and (max-width: 671px){
-				width: 40%;
-				font-size: 35px;
+				width: 60%;
+				font-size: 36px;
+				line-height: 50px;
 			}
 			@media screen and (max-width: 513px){
-				left: 20px;
+				left: 100px;
 			}
 			@media screen and (max-width: 372px){
 				top: 255px;
@@ -975,6 +976,7 @@ header.mainHeader{
 			}
 			@media screen and (max-width: 805px){
 				margin-top: 20px;
+				width: 50%;
 			}
 			@media screen and (max-width: 372px){
 				font-size: 26px;
@@ -1039,6 +1041,9 @@ header.mainHeader{
 	@media screen and (max-width: 1452px){
 		width: 100%;
 	}
+	@media screen and (max-width: 643px){
+		padding-left: 0;
+	}
 	@media screen and (max-width: 372px){
 		padding-left: 0;
 	}	
@@ -1046,6 +1051,9 @@ header.mainHeader{
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
+		@media screen and (max-width: 836px){
+			flex-wrap: wrap;
+		}
 		@media screen and (max-width: 372px){
 			flex-wrap: wrap;
 		}	
@@ -1306,10 +1314,11 @@ header.mainHeader{
 				@media screen and (max-width: 1000px){
 					padding: 30px;
 					padding-right: 0;
+					padding-left: 90px;
 				}
 
-				@media screen and (max-width: 1000px){
-					width: 100%;
+				@media screen and (max-width: 766px){
+					padding-left: 30px;
 				}
 				.cardTitle{
 					font-family: $gb;
@@ -1368,6 +1377,9 @@ header.mainHeader{
 	width: 95%;
 	padding-top: 180px;
 	padding-left: 74px;
+	@media screen and (max-width: 1000px){
+		width: 100%;
+	}
 	@media screen and (max-width: 372px){
 		padding: 0;
 		padding-left: 0;
@@ -1401,7 +1413,7 @@ header.mainHeader{
 				}
 	    	   	@media screen and (max-width: 1000px){
 					padding-top: 10px;
-					width: 130px;
+					width: 140px;
 					height: 36px;
 					left: 40.5%;
 				}
@@ -1445,6 +1457,9 @@ header.mainHeader{
 			width: 100%;
 			@media screen and (max-width: 372px){
 				padding-top: 60px;
+			}
+			@media screen and (max-width: 640px){
+				
 			}
 			.slick-dots{
 
@@ -1546,6 +1561,9 @@ header.mainHeader{
 				left: 0;
 				top: 0;
 			}
+			@media screen and (max-width: 736px){
+				padding: 0;				
+			}
 			@media screen and (max-width: 372px){
 				margin-top: -70px;
 			}
@@ -1555,13 +1573,18 @@ header.mainHeader{
 				padding: 72px 100px;
 				color: #333;
 				@media screen and (max-width: 1000px){
-					margin: 72px 50px;
+					margin: 72px 0px;
+					padding-left: 30px;
+				}
+				@media screen and (max-width: 736px){
+					padding: 36px 30px;		
+					padding-left: 0;			
 				}
 				@media screen and (max-width: 600px){
 					margin: 72px 0px;
 				}
 				@media screen and (max-width: 640px){
-					padding: 36px 10%;
+
 				}
 				@media screen and (max-width: 372px){
 					padding: 0;
@@ -1575,12 +1598,14 @@ header.mainHeader{
 					font-family: $rl;
 					padding-top: 35px;
 					width: 80%;
+					@media screen and (max-width: 736px){
+						width: 100%;	
+					}
 					@media screen and (max-width: 372px){
 						font-size: 16px;
 						line-height: 24px;
 						width: 100%;
 						padding-top: 20px;
-					
 					}
 				}
 				.arContTitle{
@@ -1589,7 +1614,7 @@ header.mainHeader{
 					line-height: 79px;
 					color: #273441;
 					@media screen and (max-width: 736px){
-						font-size: 26px;					
+						font-size: 36px;					
 					}
 				}
 			}
@@ -1603,7 +1628,7 @@ header.mainHeader{
 			padding-top: 50px;
 		}
 		@media screen and (max-width: 1000px){
-			padding-top: 50px;
+			padding-top: 0px;
 		}
 		@media screen and (max-width: 372px){
 			padding-top: 0;
@@ -1633,6 +1658,14 @@ header.mainHeader{
 					height: 460px;
 					padding-left: 100px;
 					// padding: 20px 0 260px 205px;
+					@media screen and (max-width: 1000px){
+						padding-left: 30px;
+
+					}
+					@media screen and (max-width: 598px){
+						padding-left: 0px;
+						margin-left: -20px;
+					}
 					@media screen and (max-width: 372px){
 						padding-left: 15px;
 						padding-top: 30px;
@@ -1644,6 +1677,9 @@ header.mainHeader{
 						font-family: $gb;
 						color: #333;
 						margin-bottom: 40px;
+						@media screen and (max-width: 1000px){
+							padding-left: 30px;
+						}
 						@media screen and (max-width: 453px){
 							font-size: 26px;
 							line-height: 35px;
@@ -1655,6 +1691,10 @@ header.mainHeader{
 						font-family: $rl;
 						margin-bottom: 60px;
 						width: 60%;
+						@media screen and (max-width: 1000px){
+							width: 80%;
+							padding-left: 30px;
+						}
 						@media screen and (max-width: 372px){
 							font-size: 16px;
 							line-height: 24px;
@@ -1677,6 +1717,10 @@ header.mainHeader{
 						font-family: $gb;
 						color: #fff;
 						margin-bottom: 50px;
+						@media screen and (max-width: 1000px){
+							
+							margin-left: 30px;
+						}
 						@media screen and (max-width: 372px){
 							font-size: 16px;
 							line-height: 60px;
