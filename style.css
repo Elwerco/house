@@ -226,6 +226,9 @@ header.mainHeader {
     width: 100%;
     height: 938px;
     overflow: hidden; }
+    @media screen and (max-width: 760px) {
+      header.mainHeader .headerWrapper {
+        height: 700px; } }
     @media screen and (max-width: 372px) {
       header.mainHeader .headerWrapper {
         height: 640px; } }
@@ -236,6 +239,9 @@ header.mainHeader {
       z-index: 3;
       height: 2000px;
       border-right: 1px solid #333; }
+      @media screen and (max-width: 770px) {
+        header.mainHeader .headerWrapper .entryHeader {
+          width: 250px; } }
       @media screen and (max-width: 640px) {
         header.mainHeader .headerWrapper .entryHeader {
           display: none; } }
@@ -246,17 +252,23 @@ header.mainHeader {
         top: 20px;
         right: 20px;
         cursor: pointer; }
-        @media screen and (max-width: 640px) {
-          header.mainHeader .headerWrapper .entryHeader .prevArrowFix {
-            top: 100px; } }
       header.mainHeader .headerWrapper .entryHeader .logo {
         margin: 55px 125px 22px 100px;
         width: 157px;
         height: 157px; }
+        @media screen and (max-width: 770px) {
+          header.mainHeader .headerWrapper .entryHeader .logo {
+            width: 120px;
+            height: 120px;
+            margin: 45px 65px; } }
       header.mainHeader .headerWrapper .entryHeader .wrapperList {
         margin-left: 30px;
         width: 79%;
         max-width: 500px; }
+        @media screen and (max-width: 770px) {
+          header.mainHeader .headerWrapper .entryHeader .wrapperList {
+            margin-left: 10px !important;
+            height: 120px; } }
         header.mainHeader .headerWrapper .entryHeader .wrapperList h1.headerList {
           color: #333333;
           font-size: 22px;
@@ -266,6 +278,11 @@ header.mainHeader {
           padding-bottom: 27px;
           padding-top: 27px;
           border-top: 1px solid #c2c2c2; }
+          @media screen and (max-width: 770px) {
+            header.mainHeader .headerWrapper .entryHeader .wrapperList h1.headerList {
+              font-size: 14px;
+              padding-top: 12px;
+              padding-bottom: 12px; } }
         header.mainHeader .headerWrapper .entryHeader .wrapperList h1.headerList:hover {
           color: #777;
           cursor: pointer; }
@@ -286,12 +303,20 @@ header.mainHeader {
           font-family: GothamProRegular;
           padding-left: 70px;
           padding-bottom: 17px; }
+          @media screen and (max-width: 770px) {
+            header.mainHeader .headerWrapper .entryHeader .wrapperList li.headerArticle {
+              font-size: 12px;
+              padding-left: 40px;
+              padding-bottom: 10px; } }
           header.mainHeader .headerWrapper .entryHeader .wrapperList li.headerArticle a {
             color: #333; }
         header.mainHeader .headerWrapper .entryHeader .wrapperList li.headerArticle:first-of-type {
           padding-top: 5px;
           padding-bottom: 17px;
           border-top: 0; }
+          @media screen and (max-width: 770px) {
+            header.mainHeader .headerWrapper .entryHeader .wrapperList li.headerArticle:first-of-type {
+              padding-bottom: 10px; } }
         header.mainHeader .headerWrapper .entryHeader .wrapperList li.headerArticle:last-of-type {
           padding-bottom: 25px; }
     header.mainHeader .headerWrapper #crossslide {
@@ -421,6 +446,12 @@ header.mainHeader {
         header.mainHeader .headerWrapper .headerSpan {
           width: 33%;
           font-size: 14px; } }
+      @media screen and (max-width: 484px) {
+        header.mainHeader .headerWrapper .headerSpan {
+          left: 100px; } }
+      @media screen and (max-width: 432px) {
+        header.mainHeader .headerWrapper .headerSpan {
+          left: 110px; } }
       @media screen and (max-width: 372px) {
         header.mainHeader .headerWrapper .headerSpan {
           top: 100px;
@@ -448,6 +479,9 @@ header.mainHeader {
         header.mainHeader .headerWrapper .phoneHeader {
           width: 20px;
           height: 20px; } }
+      @media screen and (max-width: 484px) {
+        header.mainHeader .headerWrapper .phoneHeader {
+          left: 40px; } }
       @media screen and (max-width: 372px) {
         header.mainHeader .headerWrapper .phoneHeader {
           top: 105px;
@@ -480,9 +514,18 @@ header.mainHeader {
           font-size: 16px;
           left: 280px;
           top: 87px; } }
+      @media screen and (max-width: 573px) {
+        header.mainHeader .headerWrapper .numberHeader {
+          right: 50px; } }
       @media screen and (max-width: 513px) {
         header.mainHeader .headerWrapper .numberHeader {
-          left: 180px; } }
+          left: 290px; } }
+      @media screen and (max-width: 484px) {
+        header.mainHeader .headerWrapper .numberHeader {
+          left: 250px; } }
+      @media screen and (max-width: 432px) {
+        header.mainHeader .headerWrapper .numberHeader {
+          left: 250px; } }
       @media screen and (max-width: 372px) {
         header.mainHeader .headerWrapper .numberHeader {
           font-size: 20px;
@@ -524,9 +567,15 @@ header.mainHeader {
           width: 60%;
           font-size: 36px;
           line-height: 50px; } }
+      @media screen and (max-width: 573px) {
+        header.mainHeader .headerWrapper .bigHeader {
+          font-size: 28px; } }
       @media screen and (max-width: 513px) {
         header.mainHeader .headerWrapper .bigHeader {
           left: 100px; } }
+      @media screen and (max-width: 432px) {
+        header.mainHeader .headerWrapper .bigHeader {
+          left: 60px; } }
       @media screen and (max-width: 372px) {
         header.mainHeader .headerWrapper .bigHeader {
           top: 255px;
@@ -534,6 +583,9 @@ header.mainHeader {
           font-size: 26px;
           line-height: 35px;
           width: 246px; } }
+      @media screen and (max-width: 281px) {
+        header.mainHeader .headerWrapper .bigHeader {
+          left: 33px; } }
     header.mainHeader .headerWrapper .sale {
       font-family: GothamProLight;
       font-size: 32px;
@@ -564,6 +616,12 @@ header.mainHeader {
       @media screen and (max-width: 513px) {
         header.mainHeader .headerWrapper .sale {
           right: 320px; } }
+      @media screen and (max-width: 449px) {
+        header.mainHeader .headerWrapper .sale {
+          width: 60%; } }
+      @media screen and (max-width: 432px) {
+        header.mainHeader .headerWrapper .sale {
+          right: 360px; } }
       @media screen and (max-width: 372px) {
         header.mainHeader .headerWrapper .sale {
           top: 420px;
@@ -603,6 +661,9 @@ header.mainHeader {
       @media screen and (max-width: 513px) {
         header.mainHeader .headerWrapper .btn {
           left: 100px; } }
+      @media screen and (max-width: 432px) {
+        header.mainHeader .headerWrapper .btn {
+          left: 60px; } }
       @media screen and (max-width: 372px) {
         header.mainHeader .headerWrapper .btn {
           top: 500px;
@@ -651,6 +712,9 @@ header.mainHeader {
       @media screen and (max-width: 372px) {
         .location .locWrapper .h1 {
           font-size: 26px; } }
+      @media screen and (max-width: 311px) {
+        .location .locWrapper .h1 {
+          font-size: 22px; } }
     .location .locWrapper .locText {
       font-family: Roboto-Light;
       color: #333333;
@@ -690,6 +754,14 @@ header.mainHeader {
           .location .locWrapper .arrowCont .natureArrow {
             font-size: 20px;
             line-height: 79px; } }
+        @media screen and (max-width: 311px) {
+          .location .locWrapper .arrowCont .natureArrow {
+            line-height: 30px;
+            padding-bottom: 20px;
+            font-size: 18px; } }
+      .location .locWrapper .arrowCont .natArCont {
+        margin-top: 30px;
+        margin-left: -10px; }
       .location .locWrapper .arrowCont .nextArrow {
         height: 50px; }
         @media screen and (max-width: 372px) {
@@ -706,7 +778,8 @@ header.mainHeader {
       display: grid;
       grid-template-columns: 100%; }
       .location .locWrapper .imgBoxCont .imgBox {
-        margin-left: 0; }
+        margin-left: 0;
+        height: 160px; }
         @media screen and (max-width: 372px) {
           .location .locWrapper .imgBoxCont .imgBox .slick-list {
             height: 160px; } }
@@ -743,6 +816,12 @@ header.mainHeader {
     width: 100%;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 805px) {
+      .infrastructure .infWrapper {
+        padding-left: 40px; } }
+    @media screen and (max-width: 600px) {
+      .infrastructure .infWrapper {
+        padding-left: 0px; } }
     .infrastructure .infWrapper .h1 {
       color: #273441;
       font-family: GothamProBold;
@@ -771,6 +850,9 @@ header.mainHeader {
         .infrastructure .infWrapper .h1 {
           font-size: 26px;
           width: 50%; } }
+      @media screen and (max-width: 311px) {
+        .infrastructure .infWrapper .h1 {
+          font-size: 22px; } }
     .infrastructure .infWrapper .locText {
       font-family: Roboto-Light;
       color: #333333;
@@ -917,7 +999,8 @@ header.mainHeader {
       display: grid;
       grid-template-columns: 246px 236px;
       grid-template-rows: 246px 246px 236px;
-      grid-gap: 20px; }
+      grid-gap: 20px;
+      margin: 0 auto; }
       @media screen and (max-width: 1268px) {
         .cards .cardsWrapper .iconCards {
           grid-template-rows: 228px 228px;
@@ -944,12 +1027,18 @@ header.mainHeader {
           justify-content: center; } }
       @media screen and (max-width: 706px) {
         .cards .cardsWrapper .iconCards {
-          grid-template-columns: repeat(2, 50%);
-          grid-template-rows: 134px 134px 134px; } }
+          grid-template-columns: repeat(2, 134px);
+          grid-template-rows: 134px 134px 134px;
+          padding-left: 0; } }
       @media screen and (max-width: 372px) {
         .cards .cardsWrapper .iconCards {
           padding-left: 0;
           margin-left: 0; } }
+      @media screen and (max-width: 299px) {
+        .cards .cardsWrapper .iconCards {
+          grid-template-columns: repeat(2, 50%);
+          grid-template-rows: 134px 134px 134px;
+          padding-left: 0; } }
       .cards .cardsWrapper .iconCards .icon1, .cards .cardsWrapper .iconCards .icon2, .cards .cardsWrapper .iconCards .icon3, .cards .cardsWrapper .iconCards .icon4, .cards .cardsWrapper .iconCards .icon5, .cards .cardsWrapper .iconCards .icon6 {
         width: 236px;
         height: 236px;
@@ -1047,12 +1136,16 @@ header.mainHeader {
           justify-content: center; } }
       .cards .cardsWrapper .descCards .descCardsWrapper1, .cards .cardsWrapper .descCards .descCardsWrapper2, .cards .cardsWrapper .descCards .descCardsWrapper3, .cards .cardsWrapper .descCards .descCardsWrapper4, .cards .cardsWrapper .descCards .descCardsWrapper5, .cards .cardsWrapper .descCards .descCardsWrapper6 {
         padding: 97px;
-        padding-top: 40px; }
+        padding-top: 40px;
+        padding-left: 180px; }
         @media screen and (max-width: 1000px) {
           .cards .cardsWrapper .descCards .descCardsWrapper1, .cards .cardsWrapper .descCards .descCardsWrapper2, .cards .cardsWrapper .descCards .descCardsWrapper3, .cards .cardsWrapper .descCards .descCardsWrapper4, .cards .cardsWrapper .descCards .descCardsWrapper5, .cards .cardsWrapper .descCards .descCardsWrapper6 {
             padding: 30px;
             padding-right: 0;
             padding-left: 90px; } }
+        @media screen and (max-width: 371px) {
+          .cards .cardsWrapper .descCards .descCardsWrapper1, .cards .cardsWrapper .descCards .descCardsWrapper2, .cards .cardsWrapper .descCards .descCardsWrapper3, .cards .cardsWrapper .descCards .descCardsWrapper4, .cards .cardsWrapper .descCards .descCardsWrapper5, .cards .cardsWrapper .descCards .descCardsWrapper6 {
+            padding-left: 0; } }
         @media screen and (max-width: 766px) {
           .cards .cardsWrapper .descCards .descCardsWrapper1, .cards .cardsWrapper .descCards .descCardsWrapper2, .cards .cardsWrapper .descCards .descCardsWrapper3, .cards .cardsWrapper .descCards .descCardsWrapper4, .cards .cardsWrapper .descCards .descCardsWrapper5, .cards .cardsWrapper .descCards .descCardsWrapper6 {
             padding-left: 30px; } }
@@ -1066,6 +1159,10 @@ header.mainHeader {
             .cards .cardsWrapper .descCards .descCardsWrapper1 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardTitle {
               font-size: 48px;
               width: 87%; } }
+          @media screen and (max-width: 640px) {
+            .cards .cardsWrapper .descCards .descCardsWrapper1 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardTitle {
+              font-size: 28px;
+              line-height: 35px; } }
           @media screen and (max-width: 372px) {
             .cards .cardsWrapper .descCards .descCardsWrapper1 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardTitle, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardTitle {
               font-size: 26px;
@@ -1087,7 +1184,8 @@ header.mainHeader {
           color: #333;
           font-size: 20px;
           line-height: 39px;
-          width: 80%; }
+          width: 80%;
+          font-family: Roboto-Light; }
           @media screen and (max-width: 372px) {
             .cards .cardsWrapper .descCards .descCardsWrapper1 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper2 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper3 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper4 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper5 .cardDesk2, .cards .cardsWrapper .descCards .descCardsWrapper6 .cardDesk2 {
               font-size: 16px;
@@ -1107,9 +1205,15 @@ header.mainHeader {
   width: 95%;
   padding-top: 180px;
   padding-left: 74px; }
+  @media screen and (max-width: 1250px) {
+    .bigPicture {
+      padding-top: 90px; } }
   @media screen and (max-width: 1000px) {
     .bigPicture {
       width: 100%; } }
+  @media screen and (max-width: 640px) {
+    .bigPicture {
+      padding-left: 0; } }
   @media screen and (max-width: 372px) {
     .bigPicture {
       padding: 0;
@@ -1135,7 +1239,7 @@ header.mainHeader {
       @media screen and (max-width: 1500px) {
         .bigPicture .bpWrapper .slick-dots {
           width: 210px;
-          height: 50px;
+          height: 80px;
           padding-top: 30px; } }
       @media screen and (max-width: 1400px) {
         .bigPicture .bpWrapper .slick-dots {
@@ -1145,7 +1249,36 @@ header.mainHeader {
           padding-top: 10px;
           width: 140px;
           height: 36px;
+          left: 39.1%;
+          display: flex;
+          justify-content: center; } }
+      @media screen and (max-width: 950px) {
+        .bigPicture .bpWrapper .slick-dots {
+          left: 39.5%; } }
+      @media screen and (max-width: 930px) {
+        .bigPicture .bpWrapper .slick-dots {
+          left: 40%; } }
+      @media screen and (max-width: 930px) {
+        .bigPicture .bpWrapper .slick-dots {
           left: 40.5%; } }
+      @media screen and (max-width: 763px) {
+        .bigPicture .bpWrapper .slick-dots {
+          left: 41%; } }
+      @media screen and (max-width: 642px) {
+        .bigPicture .bpWrapper .slick-dots {
+          left: 41%; } }
+      @media screen and (max-width: 582px) {
+        .bigPicture .bpWrapper .slick-dots {
+          left: 41.5%; } }
+      @media screen and (max-width: 563px) {
+        .bigPicture .bpWrapper .slick-dots {
+          left: 42%; } }
+      @media screen and (max-width: 522px) {
+        .bigPicture .bpWrapper .slick-dots {
+          left: 44%; } }
+      @media screen and (max-width: 462px) {
+        .bigPicture .bpWrapper .slick-dots {
+          left: 45.5%; } }
       @media screen and (max-width: 372px) {
         .bigPicture .bpWrapper .slick-dots {
           left: 30%; } }
@@ -1266,7 +1399,8 @@ header.mainHeader {
           top: 0; } }
       @media screen and (max-width: 736px) {
         .bigPicture .arWrapper .arDesc {
-          padding: 0; } }
+          padding: 0;
+          padding-left: 30px; } }
       @media screen and (max-width: 372px) {
         .bigPicture .arWrapper .arDesc {
           margin-top: -70px; } }
@@ -1281,15 +1415,16 @@ header.mainHeader {
             padding-left: 30px; } }
         @media screen and (max-width: 736px) {
           .bigPicture .arWrapper .arDesc .arContent {
-            padding: 36px 30px;
+            padding: 36px 35px;
             padding-left: 0; } }
         @media screen and (max-width: 600px) {
           .bigPicture .arWrapper .arDesc .arContent {
             margin: 72px 0px; } }
         @media screen and (max-width: 372px) {
           .bigPicture .arWrapper .arDesc .arContent {
-            padding: 0;
-            padding-left: 10px;
+            padding: 35px;
+            padding-left: 0;
+            padding-right: 15px;
             margin: 0; } }
         .bigPicture .arWrapper .arDesc .arContent .arContDesc {
           font-size: 20px;
@@ -1317,7 +1452,8 @@ header.mainHeader {
               font-size: 36px; } }
   .bigPicture .map {
     padding-top: 407px;
-    width: 95%; }
+    width: 95%;
+    margin: 0 auto; }
     @media screen and (max-width: 1655px) {
       .bigPicture .map {
         padding-top: 50px; } }
@@ -1339,7 +1475,6 @@ header.mainHeader {
         height: 100%; }
         .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent {
           width: 100%;
-          height: 460px;
           padding-left: 100px; }
           @media screen and (max-width: 1000px) {
             .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent {
@@ -1400,11 +1535,15 @@ header.mainHeader {
             @media screen and (max-width: 1000px) {
               .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .buttonOnMap {
                 margin-left: 30px; } }
-            @media screen and (max-width: 372px) {
+            @media screen and (max-width: 498px) {
+              .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .buttonOnMap {
+                margin-left: -20px; } }
+            @media screen and (max-width: 498px) {
               .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .buttonOnMap {
                 font-size: 16px;
                 line-height: 60px;
                 width: 230px;
+                margin-left: 30px;
                 height: 60px; } }
             @media screen and (max-width: 300px) {
               .bigPicture .map .mapWrapper .forMapDesc .forMapDescContent .buttonOnMap {
