@@ -319,6 +319,7 @@ header.mainHeader{
 			border-right: 1px solid #333;
 			@media screen and (max-width: 770px){
 				width: 250px;
+				overflow: scroll;
 			}
 			@media screen and (max-width: 640px){
 				display: none;
@@ -942,15 +943,16 @@ header.mainHeader{
 			}
 			.imgBox{
 				margin-left: 0;
-				height: 160px;
+				max-height: 222px;
+				overflow-y: hidden;
 				.slick-list{
 					@media screen and (max-width: 372px){
-						height: 160px;
+						max-height: 160px;
 					}
 				}
 				.slick-track{
 					@media screen and (max-width: 372px){
-						
+						height: 222px;
 					}
 				}
 				.slick-slide{

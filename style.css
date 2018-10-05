@@ -241,7 +241,8 @@ header.mainHeader {
       border-right: 1px solid #333; }
       @media screen and (max-width: 770px) {
         header.mainHeader .headerWrapper .entryHeader {
-          width: 250px; } }
+          width: 250px;
+          overflow: scroll; } }
       @media screen and (max-width: 640px) {
         header.mainHeader .headerWrapper .entryHeader {
           display: none; } }
@@ -779,10 +780,14 @@ header.mainHeader {
       grid-template-columns: 100%; }
       .location .locWrapper .imgBoxCont .imgBox {
         margin-left: 0;
-        height: 160px; }
+        max-height: 222px;
+        overflow-y: hidden; }
         @media screen and (max-width: 372px) {
           .location .locWrapper .imgBoxCont .imgBox .slick-list {
-            height: 160px; } }
+            max-height: 160px; } }
+        @media screen and (max-width: 372px) {
+          .location .locWrapper .imgBoxCont .imgBox .slick-track {
+            height: 222px; } }
         .location .locWrapper .imgBoxCont .imgBox .slick-slide {
           margin: 0;
           padding: 0;
