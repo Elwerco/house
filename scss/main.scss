@@ -568,10 +568,10 @@ header.mainHeader{
 				font-size: 14px;
 			}
 			@media screen and (max-width: 484px){
-				left: 100px;
+				left: 80px;
 			}
 			@media screen and (max-width: 432px){
-				left: 110px;
+				left: 70px;
 			}
 			@media screen and (max-width: 372px){
 				top: 100px;
@@ -644,10 +644,12 @@ header.mainHeader{
 				left: 290px;
 			}
 			@media screen and (max-width: 484px){
-				left: 250px;
+				left: 220px;
+				width: 42%;
 			}
 			@media screen and (max-width: 432px){
-				left: 250px;
+				left: 50px;
+				top: 120px;
 			}
 			@media screen and (max-width: 372px){
 				font-size: 20px;
@@ -695,12 +697,16 @@ header.mainHeader{
 			}
 			@media screen and (max-width: 573px){
 				font-size: 28px;
+				line-height: 40px;
 			}
 			@media screen and (max-width: 513px){
 				left: 100px;
 			}
 			@media screen and (max-width: 432px){
 				left: 60px;
+				width: 70%;
+				// font-size: 24px;
+				// line-height: 35px;
 			}
 			@media screen and (max-width: 372px){
 				top: 255px;
@@ -736,9 +742,16 @@ header.mainHeader{
 				top: 53%;
 				line-height: 40px;
 			}
+			@media screen and (max-width: 799px){
+				top: 53%;			}
+			@media screen and (max-width: 761px){
+				top: 65%;
+			}
 			@media screen and (max-width: 640px){
 				font-size: 18px;
 				width: 50%;
+				top: 55%;
+				left: 100px;
 			}
 			@media screen and (max-width: 513px){
 				right: 320px;
@@ -747,7 +760,7 @@ header.mainHeader{
 				width: 60%;
 			}
 			@media screen and (max-width: 432px){
-				right: 360px;
+				left: 60px;
 			}
 			@media screen and (max-width: 372px){
 				top: 420px;
@@ -786,8 +799,9 @@ header.mainHeader{
 				top: 600px;
 				width: 260px;
 			}
-			@media screen and (max-width: 513px){
-				left: 100px;
+			@media screen and (max-width: 640px){
+				top: 500px;
+				left: 90px;
 			}
 			@media screen and (max-width: 432px){
 				left: 60px;
@@ -935,16 +949,21 @@ header.mainHeader{
 		.imgBoxCont{
 			display: grid;
 			grid-template-columns: 100%;
+			width: 100%;
 			@media screen and (max-width: 1300px){
 				// grid-template-columns: 50% 10%;
 			}
 			@media screen and (max-width: 1000px){
-				
+				width: 100%;
 			}
 			.imgBox{
 				margin-left: 0;
 				max-height: 222px;
 				overflow-y: hidden;
+				width: 50%;
+				@media screen and (max-width: 834px){
+					width: 100%;
+				}
 				.slick-list{
 					@media screen and (max-width: 372px){
 						max-height: 160px;
@@ -965,22 +984,36 @@ header.mainHeader{
 			}
 			.rev{
 				width: 100%;
+				height: 30%;
+				padding-left: 50%;
+				@media screen and (max-width: 834px){
+					display: none;
+				}
 				img{
 					top: 0;
 					right: 0;
 					position: absolute;
-					
 				}
 				img:nth-of-type(2){
-					top: -230px;
+					width: 250px;
+					height: auto;
+					top: -340px;
 					right: 40px;
 					position: absolute;
+					@media screen and (min-width: 1000px){
+						right: 10%;
+					}
 					
 				}
 				img:nth-of-type(1){
-					top: -85px;
-					right: 375px;
+					width: 150px;
+					height: auto;
+					top: -240px;
+					right: 270px;
 					position: absolute;
+					@media screen and (min-width: 1000px){
+						right: 25%;
+					}
 					
 				}
 			}
@@ -1299,17 +1332,17 @@ header.mainHeader{
 					text-align: center;
 					padding-top: 140px;
 					// height: 100%;
+					@media screen and (max-width: 950px){
+						font-size: 7px;
+						line-height: 15px;
+						margin-top: 70%;
+					}
 					@media screen and (max-width: 1000px){
 						padding-top: 0;
 						// margin-top: 70%;
-						font-size: 12px;
-						line-height: 17px;
-						align-self: end;
-					}
-					@media screen and (max-width: 950px){
-						font-size: 11px;
+						font-size: 8px;
 						line-height: 15px;
-						margin-top: 70%;
+						align-self: end;
 					}
 
 				}
@@ -1730,7 +1763,7 @@ header.mainHeader{
 	}
 	.map{
 		padding-top: 407px;
-		width: 95%;
+		width: 100%;
 		// height: 720px;
 		margin: 0 auto;
 		@media screen and (max-width: 1655px){
@@ -1744,40 +1777,40 @@ header.mainHeader{
 		}
 		.mapWrapper{
 			width: 100%;
-			height: 100%;
-			// display: grid;
-			// grid-template-columns: 1.5fr 1fr;
 			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			grid-template-rows: 720px;
+			flex-direction: row;
+			// flex-wrap: wrap;
 			justify-content: end;
-			// @media screen and (max-width: 1655px){
-			// 	grid-template-columns: 1fr;
-			// 	grid-template-rows: 1fr 1fr;
-			// }
-			// @media screen and (max-width: 1000px){
-			// 	grid-template-columns: 1fr;
-			// 	grid-template-rows: 1fr 0.5fr;
-			// }
+			@media screen and (min-width: 1655px){
+				margin-top: 70px;
+			}
+			@media screen and (max-width: 1558px){
+				flex-wrap: wrap;
+				flex-direction: column;
+			}
 			.forMapDesc{
+				width: 50%;
 				height: 100%;
+				@media screen and (max-width: 1558px){
+					width: 100%;
+					height: auto;
+				}
 				.forMapDescContent{
 					width: 100%;
 					padding-left: 100px;
-					// padding: 20px 0 260px 205px;
 					@media screen and (max-width: 1000px){
 						padding-left: 30px;
 
 					}
 					@media screen and (max-width: 598px){
 						padding-left: 0px;
-						margin-left: -20px;
+						margin-left: 0px;
 					}
 					@media screen and (max-width: 372px){
 						padding-left: 15px;
 						padding-top: 30px;
 						padding-left: 30px;
+						padding-left: 0;
 					}
 					.mapDescTitle{
 						font-size: 42px;
@@ -1786,7 +1819,7 @@ header.mainHeader{
 						color: #333;
 						margin-bottom: 40px;
 						@media screen and (max-width: 1000px){
-							padding-left: 30px;
+							padding-left: 20px;
 						}
 						@media screen and (max-width: 453px){
 							font-size: 26px;
@@ -1801,7 +1834,7 @@ header.mainHeader{
 						width: 60%;
 						@media screen and (max-width: 1000px){
 							width: 80%;
-							padding-left: 30px;
+							padding-left: 20px;
 						}
 						@media screen and (max-width: 372px){
 							font-size: 16px;
@@ -1854,10 +1887,21 @@ header.mainHeader{
 				}
 			}
 			.forMap{
-				width: 100%;
-				height: 40%;
+				width: 50%;
+				height: 100%;
+				@media screen and (max-width: 1558px){
+					width: 100%;
+					height: auto;
+					margin-left: 30px;
+				}
+				@media screen and (max-width: 1000px){
+					margin-left: 0;
+				}
+				iframe{
+					height: 400px;
+				}
 				@media screen and (max-width: 1658px){
-					height: 80%;
+					height: 100%;
 				}
 			}
 		}
@@ -1869,8 +1913,11 @@ header.mainHeader{
 	// height: 485px;
 	border-top: 1px solid #b6b6b6;
 	padding-left: 80px;
-	@media screen and (max-width: 372px){
+	@media screen and (max-width: 640px){
 		padding-left: 30px;
+	}
+	@media screen and (max-width: 570px){
+		padding-left: 0;
 	}
 	.footerSupportWrapper{
 		width: 100%;
@@ -1880,9 +1927,20 @@ header.mainHeader{
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 280px;
 		grid-gap: 0px;
+		@media screen and (max-width: 1558px){
+			padding-left: 50px;
+		}
 		@media screen and (max-width: 1280px){
 			grid-template-columns: 30% 30%;
 			grid-template-rows: 1fr 1fr;
+		}
+		@media screen and (max-width: 709px){
+			grid-column-gap: 25px;
+		
+		}
+		@media screen and (max-width: 463px){
+			grid-column-gap: 10px;
+		
 		}
 		@media screen and (max-width: 372px){
 			grid-template-columns: 50% 50%;
